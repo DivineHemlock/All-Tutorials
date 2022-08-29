@@ -2,6 +2,7 @@ package com.example.chaddarbyspringsecurity;
 
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -11,6 +12,7 @@ public class Controller {
     public String test(Authentication authentication) {
         return "user :" + authentication.getName()+ "\n" + "test " + authentication.getAuthorities();
     }
+
 
 
 }
